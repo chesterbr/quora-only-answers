@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name        quora-only-answers
 // @namespace   chester.me
-// @match       http://hayageek.com/greasemonkey-tutorial/
+// @match       https://www.quora.com/*
 // @grant       none
 // @version     1.0
 // @author      @chesterbr
+// @supportURL  https://github.com/chesterbr/quora-only-answers/issues
+// @license     MIT
 // @description Changes the filter drop-down in Quora questions from "All related (n)" to "Answers (n)", avoiding the annoying "related" questions/answers.
-// @include     https://www.quora.com/*
 // @noframes
 // ==/UserScript==
 
@@ -33,7 +34,7 @@ function attemptToClickAnswers() {
   var menuItems = Array.from(document.querySelectorAll("div"))
   for (var menuItem of menuItems) {
     if (menuItem.innerText.startsWith("Answers (")) {
-      window.setTimeout(function () {
+      window.setTimeout(() => {
         menuItem.click()
       }, 100)
       return true
