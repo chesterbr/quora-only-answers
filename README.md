@@ -1,12 +1,16 @@
 # quora-only-answers
-Greasy Fork script that changes the filter drop-down in Quora questions from "All related (n)" to "Answers (n)", avoiding the annoying "related" questions/answers.
+A browser add-on script that changes the filter drop-down in Quora questions from "All related (n)" to "Answers (n)", avoiding the annoying "related" questions/answers.
+
+I have no relationship to Quora and do not represent them in any way. Heck, if I did, I'd certainly find whoever decided this would be a good idea (without a global switch to turn it off) and ask whether they ever used the goddamn website... seriously, it's annoying AF! 😡
 
 ## Installation
 
 1) Install a [Greasy Fork-compatible plugin](https://greasyfork.org/en) on your browser (my current favourite is [Violentmonkey](https://violentmonkey.github.io/)).
-2) Add the script from the official [Greasy Fork page](https://greasyfork.org/en/scripts/3970-quora-only-answers).
+2) Add the script from the official [Greasy Fork page](https://greasyfork.org/en/scripts/456419-quora-only-answers).
 
 ## How it works
+
+It is a Greasy Fork script that runs whenever a Quora question page is loaded, simulating the user action of changing the filter.
 
 Quora doesn't identify its HTML elements with any classes or IDs, so the script uses the text of the filter drop-down to identify the filter drop-down. If Quora changes the text of the filter drop-down, the script will stop working.
 
