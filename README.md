@@ -27,11 +27,16 @@ If you want to change the plugin only to yourself, feel free to modify the JavaS
 Here is how I set up my environment (VSCode/macOS, but any editor and OS should work):
 
 1) Check out this project (e.g.: `gh repo clone chesterbr/quora-only-answers`)
-2) Install a Greasy Fork plugin on your browser and the local version of the script from the project (quora-only-answers.js) on it. I recommend [Violentmonkey](https://violentmonkey.github.io/) and its instructions for [installing from a local file][(https://violentmonkey.github.io/get-it/#local](https://violentmonkey.github.io/posts/how-to-edit-scripts-with-your-favorite-editor/#install-a-local-script)).
+2) Install a Greasy Fork compatible extension/add-on on your browser and the local version of the script from the project (quora-only-answers.js) on it. I recommend [Violentmonkey](https://violentmonkey.github.io/).
 3) Install npm (e.g. `brew install node` on macOS)
 4) Install TypeScript (e.g. `npm install -g typescript`)
 5) On a VSCode terminal, run `tsc -w` so your changes to the TypeScript file are compiled automatically into the JavaScript one.
-6) Optional: Add the [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) plugin and configure it to run when files are saved.
+6) Add the local version of the script (`quora-only-answers.js`) to the Greasy Fork compatible browser extension. Violentmonkey has detailed [installing from a local file](https://violentmonkey.github.io/posts/how-to-edit-scripts-with-your-favorite-editor/#install-a-local-script), which are useful in particular on Firefox (which doesn't allow installing scripts from local files by default). Here is a quick summary:
+   - Install [http-server](https://github.com/indexzero/http-server#readme) (`npm install -g http-server`).
+   - Run `http-server -c5` on another VSCode terminal.
+   - Install the script from the URL: `http://localhost:8080/quora-only-answers.js` (don't forget to check "Track local file before this window is closed", see next step).
+   - Keep the installation page open (so the script gets reloaded when you change it).
+7) Optional: Add the [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) plugin and configure it to run when files are saved.
 
 ## License
 
