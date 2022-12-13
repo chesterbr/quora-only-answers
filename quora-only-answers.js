@@ -2,6 +2,7 @@
 // @name        quora-only-answers
 // @namespace   chester.me
 // @match       https://www.quora.com/*
+// @match       https://pt.quora.com/*
 // @grant       none
 // @version     1.0
 // @author      @chesterbr
@@ -14,7 +15,8 @@ function clickDropdown() {
     var dropdownCandidates = Array.from(document.querySelectorAll("button"));
     for (var _i = 0, dropdownCandidates_1 = dropdownCandidates; _i < dropdownCandidates_1.length; _i++) {
         var dropdown = dropdownCandidates_1[_i];
-        if (dropdown.innerText.startsWith("All related")) {
+        if (dropdown.innerText.startsWith("All related (") ||
+            dropdown.innerText.startsWith("Todos relacionados (")) {
             dropdown.click();
             return true;
         }
@@ -33,7 +35,9 @@ function attemptToClickAnswers() {
     for (var _i = 0, menuItems_1 = menuItems; _i < menuItems_1.length; _i++) {
         var menuItem = menuItems_1[_i];
         if (menuItem.innerText.startsWith("Answer (") ||
-            menuItem.innerText.startsWith("Answers (")) {
+            menuItem.innerText.startsWith("Answers (") ||
+            menuItem.innerText.startsWith("Resposta (") ||
+            menuItem.innerText.startsWith("Respostas (")) {
             window.setTimeout(function () {
                 menuItem.click();
             }, 100);
