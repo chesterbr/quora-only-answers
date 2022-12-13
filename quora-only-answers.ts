@@ -33,7 +33,10 @@ var attemptCount = 0
 function attemptToClickAnswers() {
   var menuItems = Array.from(document.querySelectorAll("div"))
   for (var menuItem of menuItems) {
-    if (menuItem.innerText.startsWith("Answers (")) {
+    if (
+      menuItem.innerText.startsWith("Answer (") ||
+      menuItem.innerText.startsWith("Answers (")
+    ) {
       window.setTimeout(() => {
         menuItem.click()
       }, 100)

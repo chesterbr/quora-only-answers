@@ -32,7 +32,8 @@ function attemptToClickAnswers() {
     var menuItems = Array.from(document.querySelectorAll("div"));
     for (var _i = 0, menuItems_1 = menuItems; _i < menuItems_1.length; _i++) {
         var menuItem = menuItems_1[_i];
-        if (menuItem.innerText.startsWith("Answers (")) {
+        if (menuItem.innerText.startsWith("Answer (") ||
+            menuItem.innerText.startsWith("Answers (")) {
             window.setTimeout(function () {
                 menuItem.click();
             }, 100);
