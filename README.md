@@ -3,7 +3,9 @@ A browser add-on script that changes the filter drop-down in Quora questions fro
 
 I have no relationship to Quora and do not represent them in any way. Heck, if I did, I'd certainly find whoever decided this would be a good idea (without a global switch to turn it off) and ask whether they ever used the goddamn website... seriously, it's annoying AF! 😡
 
-After I published it I realized there are other scripts doing the same (silly me for not searching properly). But it was a good exercise on writing a Greasy Fork script using TypeScript, so I'll leave it here!
+After I published it I realized there are other scripts doing the same (silly me for not searching properly) - although most of those scripts change page contents, whereas this one just uses the existing filter, which is (IMHO) a little slower but less brittle.
+
+Anyway it was a good exercise on writing a Greasy Fork script using TypeScript, so I'll leave it here! 🙂
 
 ## Installation
 
