@@ -4,7 +4,7 @@
 // @match       https://www.quora.com/*
 // @match       https://pt.quora.com/*
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      @chesterbr
 // @supportURL  https://github.com/chesterbr/quora-only-answers/issues
 // @license     MIT
