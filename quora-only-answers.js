@@ -4,9 +4,8 @@
 // @match       https://www.quora.com/*
 // @match       https://pt.quora.com/*
 // @grant       none
-// @version     1.2
+// @version     1.1
 // @author      @chesterbr
-// @updateURL   https://raw.githubusercontent.com/chesterbr/quora-only-answers/main/quora-only-answers.js
 // @supportURL  https://github.com/chesterbr/quora-only-answers/issues
 // @license     MIT
 // @description Changes the filter drop-down in Quora questions from "All related (n)" to "Answers (n)", avoiding the annoying "related" questions/answers.
