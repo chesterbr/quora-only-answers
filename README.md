@@ -18,7 +18,13 @@ Quora doesn't identify its HTML elements with any classes or IDs, so the script 
 
 ## Limitations
 
-The script won't work in non-English versions of Quora, because it uses the English text of the filter drop-down to identify the filter drop-down.
+The script won't work in non-English/non-Portuguese versions of Quora, because it uses the English or Portuguese text to identify the drop-down and the option to select. If you want me to support more languages you can pull request a code change, or open an issue informing how the menus are written (both singular and plural) for the desired language, and its main site URL. E.g., for the (already supported) Portuguese, it would be:
+
+- Language: Portuguese
+- Site: https://pt.quora.com
+- All related (n): Todos Relacionados (n) (same for singular and plural)
+- Answers (n): Resposta (1) / Respostas (n)
+```
 
 ## Development/Contributing
 
