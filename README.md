@@ -24,7 +24,6 @@ The script won't work in non-English/non-Portuguese versions of Quora, because i
 - Site: https://pt.quora.com
 - All related (n): Todos Relacionados (n) (same for singular and plural)
 - Answers (n): Resposta (1) / Respostas (n)
-```
 
 ## Development/Contributing
 
